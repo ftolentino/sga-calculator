@@ -11,8 +11,9 @@ class PlanetAge {
     return this.planetAge;
   }
 
-  yearsLeft() {
-
+  yearsLeft(age) {
+    this.yearsLeft = age;
+    return this.yearsLeft;
   }
 }
 

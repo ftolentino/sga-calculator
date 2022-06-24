@@ -15,4 +15,9 @@ describe('PlanetAge', () => {
     const planetAge = new PlanetAge();
     expect(planetAge.showPlanetAge(20, .24)).toEqual(83);
   });
+
+  test('yearsLeft method return a string', () => {
+    const planetAge = new PlanetAge();
+    expect(planetAge.yearsLeft(3)).toEqual(3);
+  });
 });
