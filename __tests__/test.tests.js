@@ -1,7 +1,8 @@
 import PlanetAge from '../src/js/PlanetAge.js';
 
-describe('test message', () => {
-  test('return string', () => {
-    expect(PlanetAge()).toEqual(`hi, i'm a test!'`);
+describe('PlanetAge', () => {
+  test('it should return PlanetAge class object', () => {
+    const ageObject = new PlanetAge();
+    expect(ageObject).toEqual({});
   });
 });

@@ -1,6 +1,10 @@
 
-const PlanetAge = () => {
-  return `hi, i'm a test!'`;
-};
+class PlanetAge {
+  constructor(age, planetAge) {
+    this.age = age;
+    this.planetAge = planetAge;
+  }
+  
+}
 
 export default PlanetAge;
