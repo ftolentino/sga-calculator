@@ -12,7 +12,7 @@ describe('PlanetAge', () => {
   });
 
   test('should take age argument divided by planetYear argument and round to the nearest decimal', () => {
-    const personAge = new PlanetAge();
-    expect(personAge.showPlanetAge(20, .24)).toEqual(83);
+    const planetAge = new PlanetAge();
+    expect(planetAge.showPlanetAge(20, .24)).toEqual(83);
   });
 });

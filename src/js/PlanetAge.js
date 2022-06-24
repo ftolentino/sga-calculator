@@ -2,6 +2,7 @@
 class PlanetAge {
   constructor() {
     this.planetAge = 0;
+    this.yearsLeft = 0;
   }
   
   showPlanetAge(age, planetYear) {
@@ -9,7 +10,10 @@ class PlanetAge {
     
     return this.planetAge;
   }
-}
 
+  yearsLeft() {
+
+  }
+}
 
 export default PlanetAge;

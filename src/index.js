@@ -1,17 +1,18 @@
 import PlanetAge from './js/PlanetAge.js';
-// import $ from 'jquery';
+
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
 
-// $(document).ready(function () {
-//   $('#selector').submit(function (event)) {
-//     event.preventDefault(); //if it's a form
-//     // UI code here
-//   }
-// });
+const tempUI = () => {
+  const personAge = new PlanetAge();
+  
+  const mercuryAge = personAge.showPlanetAge(39, .24);
+  const venusAge = personAge.showPlanetAge(39, .62);
+  const marsAge = personAge.showPlanetAge(39, 1.88);
+  const jupiterAge = personAge.showPlanetAge(39, 11.86);
+  
+  return `${mercuryAge}, ${venusAge}, ${marsAge}, ${jupiterAge}`;
+};
 
-console.log(PlanetAge);
-
-const mercuryAge = new PlanetAge();
-console.log(mercuryAge.showPlanetAge(20,.24));
+console.log(tempUI()); 
