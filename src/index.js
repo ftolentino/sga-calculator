@@ -12,3 +12,6 @@ import './css/styles.css';
 // });
 
 console.log(PlanetAge);
+
+const mercuryAge = new PlanetAge();
+console.log(mercuryAge.showPlanetAge(20,.24));

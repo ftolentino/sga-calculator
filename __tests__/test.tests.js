@@ -6,8 +6,13 @@ describe('PlanetAge', () => {
     expect(personAge).toEqual(personAge);
   });
 
-  test('it should return planetAge', () => {
-    const personAge = new PlanetAge(20, .24);
-    expect(personAge.showPlanetAge()).toEqual(0);
+  test('it should return planetAge equals 0, checking for property connection', () => {
+    const personAge = new PlanetAge();
+    expect(personAge.planetAge).toEqual(0);
+  });
+
+  test('should take age argument divided by planetYear argument and round to the nearest decimal', () => {
+    const personAge = new PlanetAge();
+    expect(personAge.showPlanetAge(20, .24)).toEqual(83);
   });
 });

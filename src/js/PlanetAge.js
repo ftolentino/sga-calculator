@@ -1,14 +1,15 @@
 
 class PlanetAge {
-  constructor(age, planetYear) {
-    this.age = age;
-    this.planetYear = planetYear;
+  constructor() {
     this.planetAge = 0;
   }
   
-  showPlanetAge() {
+  showPlanetAge(age, planetYear) {
+    this.planetAge = Math.round(age / planetYear);
+    
     return this.planetAge;
   }
 }
+
 
 export default PlanetAge;
