@@ -1,5 +1,5 @@
 
-class PlanetAge {
+export default class PlanetAge {
   constructor() {
     this.planetAge = 0;
     this.yearsLeft = 0;
@@ -11,10 +11,12 @@ class PlanetAge {
     return this.planetAge;
   }
 
-  yearsLeft(age) {
-    this.yearsLeft = age;
-    return this.yearsLeft;
-  }
+  
 }
 
-export default PlanetAge;
+export class LifeSpan {
+  constructor(age, yearsLeft) {
+    this.age = age;
+    this.yearsLeft = yearsLeft;
+  }
+}

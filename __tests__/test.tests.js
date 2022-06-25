@@ -1,4 +1,4 @@
-import PlanetAge from '../src/js/PlanetAge.js';
+import PlanetAge, { LifeSpan } from '../src/js/PlanetAge.js';
 
 describe('PlanetAge', () => {
   test('it should return PlanetAge class object', () => {
@@ -16,8 +16,8 @@ describe('PlanetAge', () => {
     expect(planetAge.showPlanetAge(20, .24)).toEqual(83);
   });
 
-  test('yearsLeft method return a string', () => {
-    const planetAge = new PlanetAge();
-    expect(planetAge.yearsLeft(3)).toEqual(3);
+  test('return extended LifeSpan class object', () => {
+    const life = new LifeSpan();
+    expect(life).toEqual(life);
   });
 });
