@@ -19,6 +19,9 @@ console.log(mercuryAge, venusAge, marsAge, jupiterAge);
 let personLife = new LifeExpectancy();
 
 let mercuryLifeLeft = personLife.yearsToLive(mercuryAge);
+let venusLifeLeft = personLife.yearsToLive(venusAge);
+let marsLifeLeft = personLife.yearsToLive(marsAge);
+let jupiterLifeLeft = personLife.yearsToLive(jupiterAge);
 
-console.log(mercuryLifeLeft);
+console.log(mercuryLifeLeft, venusLifeLeft, marsLifeLeft, jupiterLifeLeft);
 
