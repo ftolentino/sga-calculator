@@ -54,7 +54,7 @@ Keep it simple! You do not have to use the JavaScript Date object to complete th
 
 
 ## Known Bugs
-N/A
+UI not featured
 
 ## License
 * MIT
