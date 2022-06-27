@@ -8,4 +8,11 @@ export default class LifeExpectancy {
     this.yearsLeft = Math.floor(averagePlanetLife - planetAge);
     return this.yearsLeft;
   }
+
+  longevity(life) {
+    this.yearsLeft = life;
+    if (life < 0) {
+      return Math.abs(life);
+    }
+  }
 }
