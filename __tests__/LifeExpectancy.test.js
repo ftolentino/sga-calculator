@@ -11,9 +11,8 @@ describe('LifeExpectancy', () => {
     expect(personLife.yearsLeft).toEqual(0);
   });
 
-  // test('should take age argument divided by planetYear argument and round to the nearest decimal', () => {
-  //   let planetAge = new LifeExpectancy();
-  //   expect(planetAge.showPlanetAge(20, .24)).toEqual(83);
-  // });
-
+  test('yearsToLive method should take planetAge as a parameter and calculate years left to live based on 100 year average planet life', () => {
+    let personLife = new LifeExpectancy();
+    expect(personLife.yearsToLive(162)).toEqual(-62);
+  });
 });
