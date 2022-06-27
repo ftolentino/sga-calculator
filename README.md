@@ -51,7 +51,7 @@ Keep it simple! You do not have to use the JavaScript Date object to complete th
 * _git clone **repository link**, to your local machine._
 * _$npm install in the root directory_
 * _npm run build, npm start_
-*_open up chrome dev tools console, to see console logs of the app working (since there's no UI). You can change your age in the first parameter of the showAge method calls on the top of index.js._
+* _open up chrome dev tools console, to see console logs of the app working (since there's no UI). You can change your age in the first parameter of the showAge method calls on the top of index.js._
 
 
 ## Known Bugs
