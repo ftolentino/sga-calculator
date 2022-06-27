@@ -6,10 +6,10 @@ describe('LifeExpectancy', () => {
     expect(personLife).toEqual(personLife);
   });
 
-  // test('it should return planetAge equals 0, checking for property connection', () => {
-  //   let personAge = new LifeExpectancy();
-  //   expect(personAge.planetAge).toEqual(0);
-  // });
+  test('it should return planetAge equals 0, checking for property intialized connection', () => {
+    let personLife = new LifeExpectancy();
+    expect(personLife.yearsLeft).toEqual(0);
+  });
 
   // test('should take age argument divided by planetYear argument and round to the nearest decimal', () => {
   //   let planetAge = new LifeExpectancy();
