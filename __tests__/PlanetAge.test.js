@@ -11,14 +11,8 @@ describe('PlanetAge', () => {
     expect(personAge.planetAge).toEqual(0);
   });
 
-  test('should take age argument divided by planetYear argument and round to the nearest decimal', () => {
+  test('showPlanetAge method should take age argument divided by planetYear argument and round to the nearest decimal', () => {
     let planetAge = new PlanetAge();
     expect(planetAge.showPlanetAge(20, .24)).toEqual(83);
   });
-
 });
-
-// test('return extended LifeSpan class object', () => {
-//   const life = new LifeSpan();
-//   expect(life).toEqual(life);
-// });
