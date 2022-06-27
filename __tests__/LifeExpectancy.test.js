@@ -18,6 +18,6 @@ describe('LifeExpectancy', () => {
 
   test('longevity method should check yearsLeft if it is a negative number if the planetAge was greater than 100, return positive number to reveal longevity', () => {
     let personLife = new LifeExpectancy();
-    expect(personLife.longevity()).toEqual();
+    expect(personLife.longevity(-63)).toEqual(63);
   });
 });
